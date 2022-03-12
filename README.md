@@ -6,7 +6,7 @@ J'ai fais cette documentation et placer votre projet sur github pour que vous pu
 
 Vous pourrez aussi voir l'avancer et l'allure que le projet a.
 
-- ##### [ ] Commandes
+- ##### Commandes
     - [X] **Commande de ban**
     - [ ] **Commande de tempban** -> ***En cours***
     - [ ] **Commande de mute**
@@ -21,17 +21,17 @@ Vous pourrez aussi voir l'avancer et l'allure que le projet a.
 
 Voici la liste des commandes pour **les staffs** du serveur
 
-> - > /ban -> Permet de bannir un membre définitivemen
+/ban -> Permet de bannir un membre définitivemen
 > Syntaxe : > **```/ban <utilisateur> <raison> ```**
-> *-* **utilisateur** : Le membre à bannir format : <@id>
-> *-* **raison** : La raison du bannissement / (2000 caractères maximum) 
+*-* **utilisateur** : Le membre à bannir format : <@id>
+*-* **raison** : La raison du bannissement / (2000 caractères maximum) 
 ***
-> - > /tempban -> Permet de bannir un membre du serveur durant une certaine durée.
+/tempban -> Permet de bannir un membre du serveur durant une certaine durée.
 > Syntaxe : **```/ban <utilisateur> <durée> <raison> ```**
-> *-* **utilisateur** : Le membre à bannir format : <@id>
-> *-* **durée** : La durée du bannissement.
+*-* **utilisateur** : Le membre à bannir format : <@id>
+*-* **durée** : La durée du bannissement.
 >  **Infos** : La durée doit être du format : _<nombre de><y/m/d/h/m/s>_
-> Tableau montrant les 
+    
 > || Abbréviations        | Nom complet ||
 > |--|-----|----------| --- |
 > | | y   | Années              | 
