@@ -32,14 +32,13 @@ Voici la liste des commandes pour **les staffs** du serveur
 *-* **durée** : La durée du bannissement.
 >  **Infos** : La durée doit être du format : _<nombre de><y/m/d/h/m/s>_
     
-> || Abbréviations        | Nom complet ||
-> |--|-----|----------| --- |
-> | | y   | Années              | 
-> | | m   | Mois     |
-> | | d   | Jours    |
-> | | h   | Heures   |
-> | | min | Minutes  |
-> | |  s  | Secondes |
-> *-* **raison** : La raison du bannissement / (2000 caractères maximum) 
-
-Toutes les commandes seront répértorié ici.
+|| Abbréviations        | Nom complet ||
+|--|-----|----------| --- |
+| | y   | Années              | 
+| | m   | Mois     |
+| | d   | Jours    |
+| | h   | Heures   |
+| | min | Minutes  |
+| |  s  | Secondes |
+*-* **raison** : La raison du bannissement / (2000 caractères maximum) 
+ > **Note** : Toutes les commandes seront répértorié ici.
