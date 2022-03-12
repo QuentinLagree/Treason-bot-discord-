@@ -28,7 +28,9 @@ Voici la liste des commandes pour **les staffs** du serveur
 ***
 /tempban -> Permet de bannir un membre du serveur durant une certaine durée.
 > Syntaxe : **```/ban <utilisateur> <durée> <raison> ```**
+
 *-* **utilisateur** : Le membre à bannir format : <@id>
+    
 *-* **durée** : La durée du bannissement.
 >  **Infos** : La durée doit être du format : _<nombre de><y/m/d/h/m/s>_
     
@@ -40,5 +42,6 @@ Voici la liste des commandes pour **les staffs** du serveur
 | | h   | Heures   |
 | | min | Minutes  |
 | |  s  | Secondes |
+
 *-* **raison** : La raison du bannissement / (2000 caractères maximum) 
  > **Note** : Toutes les commandes seront répértorié ici.
