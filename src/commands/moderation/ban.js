@@ -26,8 +26,8 @@ module.exports = {
 
         const user = interaction.guild.members.cache.find(user => user.id === args[0].user.id)
         if (typeof user === "undefined") return interaction.reply({content: "Ce membre ne s'est jamais connecté sur le serveur ou n'éxiste pas !" , ephemeral: true})
+        if (args[0].user.id === interaction.user.id) return interaction.reply({ content: "Vous ne pouvez pas vous bannir vous même !", ephemeral: true })
         if (interaction.member.roles.highest.comparePositionTo(user.roles.highest) <= 0) return interaction.reply({ content: "Tu ne peux pas bannir un membre plus haut gradé que toi.", ephemeral: true })
-        if (args[0].user.id === interaction.user.id) return interaction.reply({content: "Vous ne pouvez pas vous bannir vous même !", ephemeral: true})
                             
         const embed = new MessageEmbed().setColor("#0099ff").setTitle("Confirmation de bannissement.").setDescription(`Souhaitez-vous vraiment bannir <@${user.id}> ?`)
 

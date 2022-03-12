@@ -1,5 +1,4 @@
 const {Client, CommandInteraction} = require("discord.js")
-const commands = require("../loaders")
 
 /**
  * 
@@ -9,6 +8,7 @@ const commands = require("../loaders")
  */
 
 const handleCommand = async (interaction) =>{
+    const commands = require("../loaders")(Client).commandsExports
 
     let command;
 
@@ -17,6 +17,7 @@ const handleCommand = async (interaction) =>{
  
     if (!command) return;
     try {
+        console.log(command)
         await command.execute(interaction, interaction.options.data);
     } catch (error) {
         console.error(error)

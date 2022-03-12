@@ -1,5 +1,6 @@
+const {readdirSync} = require("fs")
 const {Client, Intents} = require("discord.js");
-require("./src/loaders")
+const Logger = require("./src/tools/logger")
 let time = new Date().getMilliseconds()
 let client = new Client({intents: [
     Intents.FLAGS.GUILDS,
@@ -19,21 +20,24 @@ let client = new Client({intents: [
     Intents.FLAGS.GUILD_VOICE_STATES,
     Intents.FLAGS.GUILD_WEBHOOKS
 ]});
-
+const loader = require("./src/loaders")(client)
 const { config, lang } = require("./src/tools/yaml.js")
 
-const handleCommand = require("./src/tools/command")
-client.on("interactionCreate", async interaction => {
-    if (interaction.isCommand()) handleCommand(interaction)
-})
-
-client.once("ready", () => {
-    console.log('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=');
-    console.log(`[${(client.user.bot) ? "Bot" : "Membre"}] -- ${client.user.tag}, en ligne sur le serveur  [${client.guilds.cache.get(config.guildId).name}].`);
-    console.log(`Connection éffectué avec succés -> ${lang.check_icon}`);
-    console.log(`L'application s'est connecté avec une durée de : ${new Date().getMilliseconds() - time}ms`)
-    console.log('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=');
-})
-
-
 client.login(require("./src/tools/yaml.js").config.token)
+const eventLog = []
+readdirSync("./src/events/").forEach(async dirs => {
+    client.time = new Date().getMilliseconds()
+    const events = readdirSync(`./src/events/${dirs}`).filter(files => files.endsWith(".js"))
+    for (const file of events) {
+        const event = require(`./src/events/${dirs}/${file}`);
+        if (event.once) {
+            client.once(event.name, (...args) => event.execute(...args, time))
+        } else {
+            client.on(event.name, (...args) => event.execute(...args))
+        }
+        eventLog.push(`Chargement de l'évènement : ${event.name.toLowerCase()} -> ${lang.check_icon}`)
+    }
+})
+Logger(eventLog, "file_event")
+
+
