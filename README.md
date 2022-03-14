@@ -59,6 +59,11 @@ Voici la liste des événements que Treason pourra effectuer sur le serveur Disc
   - ready : se charge quand votre bot est prêt et qu'il est connecté sur le serveur Discord.
   - > on peut y afficher le serveur ou le Ping, vous pourrez me dire ce que vous voulez faire dans cette événement.
 
-  - interaction
+  - interactionCreate : se charge lorsqu'un utilisateur créer une interaction avec le bot en tapant une commande en cliquant sur des boutons ou autre.
 
  > **Note** : Tous les événements seront répértoriés ici.
+
+
+## Configuration du bot:
+
+Il y a pour le moment 2 fichiers de configuration : lang.yml et config.yml. Vous les trouverez dans config/
