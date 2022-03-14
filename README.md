@@ -6,6 +6,8 @@ J'ai fais cette documentation et placer votre projet sur github pour que vous pu
 
 Vous pourrez aussi voir l'avancer et l'allure que le projet a.
 
+> le projet est en privé donc seul vous et moi pourront y accéder. ( c'est moi qui décide de qui peut accéder au GitHub de Treason )
+
 - ##### Commandes
     - [X] **Commande de ban**
     - [ ] **Commande de tempban** -> ***En cours***
@@ -20,6 +22,8 @@ Vous pourrez aussi voir l'avancer et l'allure que le projet a.
 ## Liste des commandes
 
 Voici la liste des commandes pour **les staffs** du serveur
+
+> **Note :** vous pouvez retrouver toutes les commandes dans src/commands/..
 
 /ban -> Permet de bannir un membre définitivemen
 > Syntaxe : > **```/ban <utilisateur> <raison> ```**
@@ -44,4 +48,17 @@ Voici la liste des commandes pour **les staffs** du serveur
 | |  s  | Secondes |
 
 *-* **raison** : La raison du bannissement / (2000 caractères maximum) 
- > **Note** : Toutes les commandes seront répértorié ici.
+ > **Note** : Toutes les commandes seront répertoriés ici.
+
+## Liste des événements
+
+Voici la liste des événements que Treason pourra effectuer sur le serveur Discord.
+> **Note :** vous pouvez retrouver tous les événements dans src/events/..
+
+- événements du bot : tous les événements liés au bot et à son fonctionnement.
+  - ready : se charge quand votre bot est prêt et qu'il est connecté sur le serveur Discord.
+  - > on peut y afficher le serveur ou le Ping, vous pourrez me dire ce que vous voulez faire dans cette événement.
+
+  - interaction
+
+ > **Note** : Tous les événements seront répértoriés ici.
