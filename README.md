@@ -1,13 +1,7 @@
 # Treason Bot
 
-Ici, vous trouverez  la documentation complète de votre bot discord en passant par les commandes que par les évènements que votre bot pourra effectuer.
+Ici, vous trouverez  la documentation complète du bot discord en passant par les commandes ainsi que par les évènements que le bot pourra effectuer.
 # Pourquoi je fais cette documentation ?
-J'ai fais cette documentation et placer votre projet sur github pour que vous puissiez y accéder facilement et pour que vous puissiez voir l'avancé des versions de votre bot discord.
-
-Vous pourrez aussi voir l'avancer et l'allure que le projet a.
-
-> le projet est en privé donc seul vous et moi pourront y accéder. ( c'est moi qui décide de qui peut accéder au GitHub de Treason )
-
 - ##### Commandes
     - [X] **Commande de ban**
     - [ ] **Commande de tempban** -> ***En cours***
@@ -23,9 +17,9 @@ Vous pourrez aussi voir l'avancer et l'allure que le projet a.
 
 Voici la liste des commandes pour **les staffs** du serveur
 
-> **Note :** vous pouvez retrouver toutes les commandes dans src/commands/..
+> **Note :** toutes les commandes se trouvent dans src/commands/..
 
-/ban -> Permet de bannir un membre définitivemen
+/ban -> Permet de bannir un membre définitivement
 > Syntaxe : > **```/ban <utilisateur> <raison> ```**
 *-* **utilisateur** : Le membre à bannir format : <@id>
 *-* **raison** : La raison du bannissement / (2000 caractères maximum) 
@@ -53,7 +47,7 @@ Voici la liste des commandes pour **les staffs** du serveur
 ## Liste des événements
 
 Voici la liste des événements que Treason pourra effectuer sur le serveur Discord.
-> **Note :** vous pouvez retrouver tous les événements dans src/events/..
+> **Note :** tous les événements se trouvent dans src/events/..
 
 - événements du bot : tous les événements liés au bot et à son fonctionnement.
   - ready : se charge quand votre bot est prêt et qu'il est connecté sur le serveur Discord.
@@ -64,6 +58,4 @@ Voici la liste des événements que Treason pourra effectuer sur le serveur Disc
  > **Note** : Tous les événements seront répértoriés ici.
 
 
-## Configuration du bot:
-
-Il y a pour le moment 2 fichiers de configuration : lang.yml et config.yml. Vous les trouverez dans config/
+## Configuration du bot: en cours
